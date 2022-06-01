@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1ons8o3Et90vfiZd95LszBw+UfgQTnA1qKk4HJDQykAvt5zWQJ2jDsSS8b9OlIpJ8Nfnql3w1m3bIdyRmG6Lyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\enio\\Desktop\\workspace\\interface_cs\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enio\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
+    "C:\\Users\\enio\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
