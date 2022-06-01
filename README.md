@@ -1,2 +1,5 @@
 # Gerenciamento_bancario
-sistema de gerenciamento bancário feito na linguagem java
+Modelo de sistema de gerenciamento bancário.
+Interface gráfica feita com visual studio 2022.
+Persistido no banco de dados Postgresql.
+Linguagens usadas: C-sharp, Sql.
