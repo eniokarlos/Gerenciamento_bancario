@@ -40,6 +40,7 @@
             this.SaldoLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LimiteLabel = new System.Windows.Forms.Label();
@@ -172,6 +173,7 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.AccountLabel);
             this.panel1.Controls.Add(this.UserLabel);
@@ -180,6 +182,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(278, 166);
             this.panel1.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Inter SemiBold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(155, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 20);
+            this.label4.TabIndex = 1;
             // 
             // label2
             // 
@@ -235,7 +247,7 @@
             this.MaximizeBox = false;
             this.Name = "UserCorrente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserCorente";
+            this.Text = "Corrente";
             this.Load += new System.EventHandler(this.UserCorrente_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -259,5 +271,6 @@
         private Label label2;
         private Label label3;
         private Label LimiteLabel;
+        private Label label4;
     }
 }

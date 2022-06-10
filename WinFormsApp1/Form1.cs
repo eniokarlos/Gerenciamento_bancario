@@ -15,7 +15,13 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            signInWindow janela3 = new signInWindow();
+            signInWindow janela3 = new signInWindow(false);
+            janela3.ShowDialog();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            signInWindow janela3 = new signInWindow(true);
             janela3.ShowDialog();
         }
     }

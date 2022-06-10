@@ -26,15 +26,16 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if(Corrente.Checked == true)
             {
                 c.connect();
-                c.insertCorrente(Accountbox.Text, PasswordBox.Text, NameBox.Text, CpfBox.Text,0,2000);
+                c.insertCorrente(PasswordBox.Text, NameBox.Text, CpfBox.Text,0,2000, AgenciaBox.Text);
             }
             else
             {
                 c.connect();
-                c.insertPoupanca(Accountbox.Text, PasswordBox.Text, NameBox.Text, CpfBox.Text, 0);
+                c.insertPoupanca(PasswordBox.Text, NameBox.Text, CpfBox.Text, 0, AgenciaBox.Text);
             }
             MessageBox.Show("Conta criada com sucesso!");
             Close();

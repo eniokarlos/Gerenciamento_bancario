@@ -22,3 +22,7 @@ C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug
 C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.signInWindow.resources
 C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserPoupanca.resources
 C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserCorrente.resources
+C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.FuncionarioCadastro.resources
+C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserDiretor.resources
+C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserGerente.resources
+C:\Users\enio\Desktop\workspace\interface_cs\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Visualizar.resources

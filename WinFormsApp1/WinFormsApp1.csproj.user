@@ -4,6 +4,12 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FuncionarioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserDiretor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserCorrente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,7 +19,13 @@
     <Compile Update="signUpWindow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserGerente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserPoupanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Visualizar.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

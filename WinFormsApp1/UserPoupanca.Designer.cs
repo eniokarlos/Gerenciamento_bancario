@@ -33,15 +33,15 @@
             this.AccountLabel = new System.Windows.Forms.Label();
             this.CpfLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SaldoLabel = new System.Windows.Forms.Label();
             this.SacarButton = new System.Windows.Forms.Button();
             this.DepositarButton = new System.Windows.Forms.Button();
-            this.TaxaButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.ExtratoButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@
             this.UserLabel.ForeColor = System.Drawing.Color.White;
             this.UserLabel.Location = new System.Drawing.Point(12, 114);
             this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(175, 20);
+            this.UserLabel.Size = new System.Drawing.Size(260, 20);
             this.UserLabel.TabIndex = 1;
             this.UserLabel.Text = "Nome:  abcde";
             // 
@@ -63,7 +63,7 @@
             this.AccountLabel.ForeColor = System.Drawing.Color.White;
             this.AccountLabel.Location = new System.Drawing.Point(11, 94);
             this.AccountLabel.Name = "AccountLabel";
-            this.AccountLabel.Size = new System.Drawing.Size(174, 20);
+            this.AccountLabel.Size = new System.Drawing.Size(261, 20);
             this.AccountLabel.TabIndex = 1;
             this.AccountLabel.Text = "Conta:  abcde";
             // 
@@ -82,6 +82,7 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.AccountLabel);
             this.panel1.Controls.Add(this.UserLabel);
@@ -90,6 +91,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(278, 166);
             this.panel1.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Inter SemiBold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(152, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 20);
+            this.label3.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Inter SemiBold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(152, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Conta Poupanca";
             // 
             // label1
             // 
@@ -146,22 +168,6 @@
             this.DepositarButton.UseVisualStyleBackColor = false;
             this.DepositarButton.Click += new System.EventHandler(this.DepositarButton_Click);
             // 
-            // TaxaButton
-            // 
-            this.TaxaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(196)))), ((int)(((byte)(98)))));
-            this.TaxaButton.FlatAppearance.BorderSize = 0;
-            this.TaxaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TaxaButton.Font = new System.Drawing.Font("Inter SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TaxaButton.ForeColor = System.Drawing.Color.White;
-            this.TaxaButton.Location = new System.Drawing.Point(12, 382);
-            this.TaxaButton.Margin = new System.Windows.Forms.Padding(0);
-            this.TaxaButton.Name = "TaxaButton";
-            this.TaxaButton.Size = new System.Drawing.Size(115, 27);
-            this.TaxaButton.TabIndex = 6;
-            this.TaxaButton.Text = "Calc. Taxas";
-            this.TaxaButton.UseVisualStyleBackColor = false;
-            this.TaxaButton.Click += new System.EventHandler(this.TaxaButton_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(145, 339);
@@ -187,25 +193,14 @@
             this.ExtratoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExtratoButton.Font = new System.Drawing.Font("Inter SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ExtratoButton.ForeColor = System.Drawing.Color.White;
-            this.ExtratoButton.Location = new System.Drawing.Point(145, 382);
+            this.ExtratoButton.Location = new System.Drawing.Point(62, 383);
             this.ExtratoButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExtratoButton.Name = "ExtratoButton";
-            this.ExtratoButton.Size = new System.Drawing.Size(139, 27);
+            this.ExtratoButton.Size = new System.Drawing.Size(179, 27);
             this.ExtratoButton.TabIndex = 8;
             this.ExtratoButton.Text = "Extrato";
             this.ExtratoButton.UseVisualStyleBackColor = false;
             this.ExtratoButton.Click += new System.EventHandler(this.ExtratoButton_Click);
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Inter SemiBold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(152, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Conta Poupanca";
             // 
             // UserPoupanca
             // 
@@ -216,7 +211,6 @@
             this.Controls.Add(this.ExtratoButton);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.TaxaButton);
             this.Controls.Add(this.DepositarButton);
             this.Controls.Add(this.SacarButton);
             this.Controls.Add(this.SaldoLabel);
@@ -227,6 +221,7 @@
             this.Name = "UserPoupanca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Poupanca";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserPoupanca_FormClosing);
             this.Load += new System.EventHandler(this.UserPoupanca_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -243,10 +238,10 @@
         private Label SaldoLabel;
         private Button SacarButton;
         private Button DepositarButton;
-        private Button TaxaButton;
         private TextBox textBox1;
         private TextBox textBox2;
         private Button ExtratoButton;
         private Label label2;
+        private Label label3;
     }
 }

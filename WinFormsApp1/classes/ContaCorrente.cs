@@ -2,10 +2,11 @@
 
 namespace WinFormsApp1
 {
-    internal class ContaCorrente : Conta
+    public class ContaCorrente : Conta, IEmprestimo
     {
         private double LIMITE = 2000;
         private double limiteDisponivel;
+        private double valorPago = 0;
 
         public ContaCorrente(String nConta, String senha, String nomeTitular, String cpfTitular, Double saldo, double limiteDisponivel)
         : base(nConta, senha, nomeTitular, cpfTitular)
@@ -57,6 +58,32 @@ namespace WinFormsApp1
             }
             Saldo = Saldo - valorSaque;
             return Saldo;
+        }
+        public void ObterEmprestimo(Double valor, Double taxa)
+        {
+            Emprestimo += valor;
+            EmprestimoTaxa += taxa;
+            Saldo += valor;
+        }
+
+        public void PagarEmprestimo()
+        {
+            double aux = Emprestimo * EmprestimoTaxa;
+            if (Saldo > 0 && Emprestimo != 0 && Saldo - (aux) > 0)
+            {
+                if (valorPago < (Emprestimo + (Emprestimo * EmprestimoTaxa * 10)))
+                {
+                    Saldo -= aux;
+                    valorPago += aux;
+                    Emprestimo -= aux;
+                }
+                else if (valorPago >= Emprestimo)
+                {
+                    Emprestimo = 0;
+                    EmprestimoTaxa = 0;
+                    valorPago = 0;
+                }
+            }
         }
         public Double LimiteDisponivel { get { return limiteDisponivel; } set { limiteDisponivel = value; } }
     }
