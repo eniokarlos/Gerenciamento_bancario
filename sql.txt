@@ -1,0 +1,46 @@
+/*
+create table funcionario (
+	id_funcionario serial,
+	nome Varchar(20),
+	senha varchar(20),
+	cpf Varchar(25),
+	cargo Varchar(20),
+	agencia Varchar(20),
+	emprestimo real,
+	taxa real,
+	primary key(id_funcionario)
+)
+
+create table conta_corrente(
+	numconta serial,
+	senha Varchar(20),
+	nome Varchar(20),
+	cpf Varchar(25),
+	saldo real,
+	limite real,
+	agencia Varchar(20),
+	emprestimo real,
+	taxa real,
+	primary key (numconta)
+)
+
+create table conta_poupanca(
+	numconta serial,
+	senha Varchar(20),
+	nome Varchar(20),
+	cpf Varchar(25),
+	saldo real,
+	agencia Varchar(20),
+	emprestimo real,
+	taxa real,
+	primary key (numconta)
+)
+
+create table extrato (numconta integer, tipo varchar(20), valor real)
+
+insert into funcionario (nome,senha,cpf,cargo,agencia) values('Joao','102030','506.345.235-67','diretor', '')
+insert into funcionario (nome,senha,cpf,cargo,agencia) values('Antonio','102030','868.567.235-78', 'gerente', '1020')
+insert into conta_corrente values('0001', '1234', 'Maria','346.767.786-89',0,2000,'1020');
+insert into conta_poupanca values('1235','1234','Paulo','1234567',0,'1235')
+
+*/
